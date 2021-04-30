@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图标/有效许口</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50.0497752%" id="radialGradient-1">
+            <stop stop-color="#26E3AB" offset="0%"></stop>
+            <stop stop-color="#19CF88" stop-opacity="0" offset="73.2815383%"></stop>
+            <stop stop-color="#11C372" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="28" cy="28" r="28"></circle>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="56" height="56" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-8备份-2">
+            <use id="椭圆形" stroke="url(#radialGradient-1)" mask="url(#mask-3)" stroke-width="12" opacity="0.300000012" stroke-dasharray="40,15" xlink:href="#path-2"></use>
+            <circle id="椭圆形备份-6" fill="#11C372" cx="28" cy="28" r="22"></circle>
+            <path d="M37,18 L37,38 L19,38 L19,18 L37,18 Z M34,34 L22,34 L22,35 L34,35 L34,34 Z M34,31 L22,31 L22,32 L34,32 L34,31 Z M28,21 L26.8244295,23.381966 L24.1957739,23.763932 L26.097887,25.618034 L25.648859,28.236068 L28,27 L30.351141,28.236068 L29.902113,25.618034 L31.8042261,23.763932 L29.1755705,23.381966 L28,21 Z" id="形状结合" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

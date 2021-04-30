@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图标/同时算法调度支持</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50.0497752%" id="radialGradient-1">
+            <stop stop-color="#009DFF" offset="0%"></stop>
+            <stop stop-color="#009DFF" stop-opacity="0" offset="73.1260557%"></stop>
+            <stop stop-color="#009DFF" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="28" cy="28" r="28"></circle>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="56" height="56" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <g id="编组-8备份-2">
+                <use id="椭圆形" stroke="url(#radialGradient-1)" mask="url(#mask-3)" stroke-width="12" opacity="0.300000012" stroke-dasharray="40,15" xlink:href="#path-2"></use>
+                <circle id="椭圆形备份-6" fill="#009DFF" cx="28" cy="28" r="22"></circle>
+            </g>
+            <g id="调度-(1)" transform="translate(16.000000, 18.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M0,13.3333333 L6.66666666,8 L6.66666666,12 L16,12 L16,16 L6.66666666,16 L6.66666666,20 L0,13.3333333 Z M24,6.66666666 L17.3333333,12 L17.3333333,8 L8,8 L8,4 L17.3333333,4 L17.3333333,0 L24,6.66666666 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

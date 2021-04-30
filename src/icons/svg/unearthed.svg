@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图标/车次</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50.0497752%" id="radialGradient-1">
+            <stop stop-color="#009DFF" offset="0%"></stop>
+            <stop stop-color="#009DFF" stop-opacity="0" offset="73.1260557%"></stop>
+            <stop stop-color="#009DFF" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="28" cy="28" r="28"></circle>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="56" height="56" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标/车次">
+            <g id="编组-8备份-2">
+                <use id="椭圆形" stroke="url(#radialGradient-1)" mask="url(#mask-3)" stroke-width="12" opacity="0.300000012" stroke-dasharray="40,15" xlink:href="#path-2"></use>
+                <circle id="椭圆形备份-6" fill="#009DFF" cx="28" cy="28" r="22"></circle>
+            </g>
+            <path d="M23.8944272,19.7888544 L29.2763932,30.5527864 C29.5233825,31.0467649 29.3231581,31.6474379 28.8291796,31.8944272 C28.6903242,31.9638549 28.5372111,32 28.381966,32 L17.618034,32 C17.0657492,32 16.618034,31.5522847 16.618034,31 C16.618034,30.8447549 16.6541791,30.6916418 16.7236068,30.5527864 L22.1055728,19.7888544 C22.3525621,19.2948759 22.9532351,19.0946515 23.4472136,19.3416408 C23.640741,19.4384045 23.7976635,19.595327 23.8944272,19.7888544 Z" id="三角形" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M30.8944272,19.7888544 L39.2763932,36.5527864 C39.5233825,37.0467649 39.3231581,37.6474379 38.8291796,37.8944272 C38.6903242,37.9638549 38.5372111,38 38.381966,38 L21.618034,38 C21.0657492,38 20.618034,37.5522847 20.618034,37 C20.618034,36.8447549 20.6541791,36.6916418 20.7236068,36.5527864 L29.1055728,19.7888544 C29.3525621,19.2948759 29.9532351,19.0946515 30.4472136,19.3416408 C30.640741,19.4384045 30.7976635,19.595327 30.8944272,19.7888544 Z" id="三角形备份" stroke="#009DFF" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

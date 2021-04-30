@@ -1,0 +1,591 @@
+/*!
+ * @名称：base.css
+ * @功能：1、重设浏览器默认样式
+ *        2、设置通用原子类
+ */
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+
+html {
+    background: #fff;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    max-height: 9999999px;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    max-height: 999999px;
+    box-sizing: border-box;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-size: 12px;
+    color: #333;
+    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    -webkit-appearance: none;
+}
+
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+/* 去掉 table cell 的边距并让其边重合 */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ie bug：th 不继承 text-align */
+
+th {
+    text-align: inherit;
+}
+
+/* 去除默认边框 */
+
+fieldset,
+img {
+    border: none;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+
+iframe {
+    display: block;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+
+abbr,
+acronym {
+    border: none;
+    font-variant: normal;
+}
+
+/* 一致的 del 样式 */
+
+del {
+    text-decoration: line-through;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* 去掉列表前的标识，li 会继承 */
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* 对齐是排版最重要的因素，别让什么都居中 */
+
+caption,
+th {
+    text-align: left;
+}
+
+/* 来自yahoo，让标题都自定义，适应多个系统应用 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+/* 统一上标和下标 */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* 让链接在 hover 状态下不显示下划线 */
+
+a {
+    color: #333
+}
+
+a:hover,
+a:visited,
+a:active,
+a:link {
+    text-decoration: none !important
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+
+ins,
+a {
+    text-decoration: none;
+}
+
+/* 去除 ie6 & ie7 焦点点状线 */
+
+a:focus,
+*:focus {
+    outline: none;
+}
+
+/* ==========通用原子类========= */
+
+/* 清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+    /* for ie6 & ie7 */
+}
+
+/* .clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+} */
+
+/* 设置显示和隐藏，通常用来与 js 配合 */
+
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* 设置浮动，减少浮动带来的 bug */
+
+.fl,
+.fr {
+    display: inline;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 垂直居中 */
+
+.centerY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+/* 水平居中 */
+
+.centerX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+/* 文本 */
+
+.fb {
+    font-weight: bold;
+}
+
+.fn {
+    font-weight: normal;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.bc {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ccc;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ccc;
+}
+
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+
+.van-toast--text {
+    padding: 25px !important;
+    min-width: 440px !important;
+}
+.van-toast{
+    font-size: 24px !important;
+}
+// ::-webkit-scrollbar { 
+//     width: 8px; 
+//     height: 8px; 
+//     background:rgba(0,0,0,0.25); 
+//     } 
+//     ::-webkit-scrollbar-button { 
+//     display: none; 
+//     } 
+//     ::-webkit-scrollbar-thumb { 
+//     border-radius: 8px; 
+//     background: #62ceb7; 
+//     } 
+//     ::-webkit-scrollbar-track { 
+//     border-radius: 8px; 
+//     background: rgba(0,0,0,0.25); 
+//     }
+::-webkit-scrollbar { 
+    display: none; 
+    width: 0 !important;
+ }
+
+// 去除高德地图logo及版本
+.amap-logo{
+    display: none;
+    opacity: 0;
+}
+.amap-copyright{
+    opacity: 0;
+}
+.el-dialog__wrapper{
+    background:rgba(0,0,0,0.7);
+}
+
+.el-table__header-wrapper{
+    thead{
+        .cell{
+            font-weight: 600;
+        }
+    }
+}
+.el-table__body-wrapper{
+    &::-webkit-scrollbar { 
+			width: 1px;  height: 1px;
+			background: transparent;
+    }
+    &::scrollbar-button {
+			display: none;
+    }
+    &::scrollbar-thumb { 
+			border-radius: 0px;
+    	background: transparent;
+    }
+    &::scrollbar-track {
+			border-radius: 0px;
+			background: transparent;
+		}
+    .el-table__row{
+        .cell{
+            span, div{
+                font-size: 16px;
+            }
+        }
+    }
+}
+//css帧动画
+@keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: right 0;
+    }
+  }
+  
+  .animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  }
+  
+  .animated.infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  .animated.delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animated.delay-2s {
+    animation-delay: 2s;
+  }
+  
+  .animated.delay-3s {
+    animation-delay: 3s;
+  }
+  
+  .animated.delay-4s {
+    animation-delay: 4s;
+  }
+  
+  .animated.delay-5s {
+    animation-delay: 5s;
+  }
+  
+  .animated.fast {
+    animation-duration: 800ms;
+  }
+  
+  .animated.faster {
+    animation-duration: 500ms;
+  }
+  
+  .animated.slow {
+    animation-duration: 2s;
+  }
+  
+  .animated.slower {
+    animation-duration: 3s;
+  }
+  
+  @media (print), (prefers-reduced-motion: reduce) {
+    .animated {
+      animation-duration: 1ms !important;
+      transition-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+  }
+  
+  
+  @keyframes slideInUp {
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInUp {
+    animation-name: slideInUp;
+  }
+  
+  @keyframes lightSpeedIn {
+    from {
+      transform: translate3d(100%, 0, 0) skewX(-30deg);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: skewX(20deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: skewX(-5deg);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .lightSpeedIn {
+    animation-name: lightSpeedIn;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .bounceIn {
+    animation-duration: 0.75s;
+    animation-name: bounceIn;
+  }
+  
+  @keyframes bounceOutRight {
+    20% {
+      opacity: 1;
+      transform: translate3d(-20px, 0, 0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(2000px, 0, 0);
+    }
+  }
+  
+  .bounceOutRight {
+    animation-name: bounceOutRight;
+  }

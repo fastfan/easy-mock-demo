@@ -1,17 +1,85 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-04-06 10:44:50
+ * @LastEditTime: 2021-04-30 14:31:06
+ * @LastEditors: fastfan
+ * @Description: In User Settings Edit
+ * @FilePath: \qc-cityai-web\public\index.html
+-->
+
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="<%= webpackConfig.output.publicPath %>favicon.ico">
+  <title>智慧青城</title>
+  <!-- <script language="javascript" src="./statics/js/amapBase.js"></script>
+  <script language="javascript" src="./statics/js/amapMain.js"></script> -->
+  <script language="javascript"
+    src="//webapi.amap.com/maps?v=1.4.15&key=e9a6af015d1f6c6cb09bd96ab31f889d&plugin=AMap.ControlBar,AMap.Autocomplete,AMap.PlaceSearch,AMap.MarkerClusterer"></script>
+    <script language="javascript" src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <!-- <script src="./statics/js/ajaxhook.min.js"></script> -->
+    <!-- <script  type="text/javascript">
+      let host = window.location.host
+      let head= document.getElementsByTagName('head')[0];
+      let href,href1
+
+        href = 'http://10.17.155.20:9090/ui/1.0/main.js?v=1.0.11'
+        href1 = 'http://10.17.155.20:9090/maps?v=1.4.15&amp;key=14b6d350356b1735f325822c436d6fdd&amp;plugin=AMap.ControlBar,AMap.Autocomplete,AMap.PlaceSearch,AMap.MarkerClusterer'
+        let script3 = document.createElement('script');
+        script3.type= 'text/javascript';
+        script3.src= './statics/js/ajaxhook.min.js';
+        head.appendChild(script3)
+        ah.proxy({
+          onRequest: (config, handler) => {
+              // console.log(config.url)
+              if (config.url.toString().search('https://vdata.amap.com') != -1) {
+                  config.url = 'http://10.17.155.20:9090' + config.url.split('vdata.amap.com/')[1];
+                  console.log(config.url)
+              } else if (config.url.toString().search('http://restapi.amap.com') != -1) {
+                  config.url = 'http://10.17.155.20:9090' + config.url.split('restapi.amap.com/')[1];
+                  console.log(config.url)
+              } else if (config.url.toString().search('http://vector.amap.com') != -1) {
+                  config.url = 'http://10.17.155.20:9090' + config.url.split('vector.amap.com/')[1];
+                  console.log(config.url)
+              } else if (config.url.toString().search('http://lbs.amap.com') != -1) {
+                  config.url = 'http://10.17.155.20:9090' + config.url.split('lbs.amap.com/')[1];
+                  console.log(config.url)
+              }
+              handler.next(config);
+          },
+          onError: (err, handler) => {
+              console.log(err.type)
+              handler.next(err)
+          },
+          onResponse: (response, handler) => {
+              // console.log(response.response)
+              handler.next(response)
+          }
+        })
+      let script= document.createElement('script');
+      let script2= document.createElement('script');
+      script.type= 'text/javascript';
+      script2.type= 'text/javascript';
+      script.src= href;
+      script2.src= href1;
+      head.appendChild(script)
+      head.appendChild(script2)
+    </script> -->
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but admin-base doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
+

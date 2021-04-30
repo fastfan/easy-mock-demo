@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图标/AI监控</title>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ai监控">
+            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24" height="24"></rect>
+            <path d="M4.125,14.75 L4.125,12 L2,11.625 L2,20.375 L4.125,19.625 L4.125,16.625 L7.5,16.625 L9,14.375 L7.125,13.25 L6.25,14.75 L4.125,14.75 L4.125,14.75 Z M22,12 L6.75,2 L5,2 L2.625,5.75 L2.625,7 L16.25,15.75 L17.375,15.625 L22,12 Z M2.625,7.75 L2.625,9.75 L16.375,18.375 L17.625,18.375 L18.25,17.75 L18.875,15.875 C18.875,15.875 17.125,17.125 17,17.125 C16.375,16.625 2.625,7.75 2.625,7.75 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
